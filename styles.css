@@ -1,0 +1,34 @@
+.container {
+    padding-top: 0cm;
+}
+
+#photos {
+    padding-top: 3cm;
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+.cool-title {
+    display: block;
+    text-transform: uppercase;
+    font-size: xxx-large;
+    font-style: italic;
+    font-weight: 900;
+    margin-left: 2%;
+    padding-top: 3cm;
+    padding-right: 3cm;
+
+
+}
+
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+    margin: 0;
+}
