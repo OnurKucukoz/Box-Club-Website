@@ -1,9 +1,15 @@
 <?php
 
-$db_server = "localhost"; //localhost
-$db_user = "id21016454_onurkucukoz"; //root
-$db_pass = "Uk_145300";
-$db_name = "id21016454_boxwebsitedb"; //businessdb
+$env = parse_ini_file(".env");
+
+
+
+
+
+$db_server = $env['DB_HOST']; //localhost
+$db_user =  $env['DB_USER']; //root
+$db_pass = $env['DB_PASS'];
+$db_name = $env['DB_NAME']; //businessdb
 $conn = "";
 
 
@@ -14,6 +20,6 @@ try {
         $db_pass,
         $db_name
     );
-} catch (mysqli_sql_exception) {
+} catch (mysqli_sql_exception $e) {
     echo "Could not connect";
 }
