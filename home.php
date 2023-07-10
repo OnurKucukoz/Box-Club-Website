@@ -2,7 +2,8 @@
 
 session_start();
 include_once("database.php");
-if (isset($_SESSION['email']) && isset($_SESSION['success'])) {
+if (isset($_SESSION['email']) && isset($_SESSION['success']))
+echo "hello"; {
 
 ?>
 
@@ -16,7 +17,6 @@ if (isset($_SESSION['email']) && isset($_SESSION['success'])) {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
         <link rel="stylesheet" href="styles.css">
     </head>
-
 
     <body>
 
@@ -46,13 +46,9 @@ if (isset($_SESSION['email']) && isset($_SESSION['success'])) {
                             </ul>
                         </li>
 
-
-
-
-
                     </ul>
 
-                    <h1>Welcome, <?php echo $_SESSION['name']; ?></h1>
+                    <h1>Welcome,<?php echo $_SESSION['name']; ?></h1>
 
                     <a href="logout.php" <button style="margin-right: 1cm; margin-left: 1cm;" class="btn btn-outline-success" type="submit"> Logout</button></a>
 
@@ -73,8 +69,6 @@ if (isset($_SESSION['email']) && isset($_SESSION['success'])) {
                 </div>
 
             </div>
-
-
 
         </section>
 
@@ -176,10 +170,6 @@ if (isset($_SESSION['email']) && isset($_SESSION['success'])) {
                 </div>
 
 
-
-
-
-
             </main>
 
             </div>
@@ -261,6 +251,8 @@ if (isset($_SESSION['email']) && isset($_SESSION['success'])) {
                             <h5 class="card-title" style="color: white;">Rex Hunter</h5>
                             <p class="card-text">Trainer</p>
                             <a href="https://www.instagram.com/kucukozonur/" target="_blank" class="btn btn-primary">Instagram</a>
+                            <a href="appointment.php"  class="btn btn-primary" style="float: right;">Appointment</a>
+
                         </div>
                     </div>
 
@@ -270,6 +262,8 @@ if (isset($_SESSION['email']) && isset($_SESSION['success'])) {
                             <h5 class="card-title" style="color: white;">Wade Alvarez</h5>
                             <p class="card-text">Trainer</p>
                             <a href="https://www.instagram.com/kucukozonur/" target="_blank" class="btn btn-primary">Instagram</a>
+                            <a href="appointment.php"  class="btn btn-primary" style="float: right;">Appointment</a>
+
                         </div>
                     </div>
 
@@ -279,6 +273,8 @@ if (isset($_SESSION['email']) && isset($_SESSION['success'])) {
                             <h5 class="card-title" style="color: white;">Leroy Lowe</h5>
                             <p class="card-text">Trainer</p>
                             <a href="https://www.instagram.com/kucukozonur/" target="_blank" class="btn btn-primary">Instagram</a>
+                            <a href="appointment.php"  class="btn btn-primary" style="float: right;">Appointment</a>
+
                         </div>
                     </div>
 
@@ -288,6 +284,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['success'])) {
                             <h5 class="card-title" style="color: white;">Alice Mullins</h5>
                             <p class="card-text">Trainer</p>
                             <a href="https://www.instagram.com/kucukozonur/" target="_blank" class="btn btn-primary">Instagram</a>
+                            <a href="appointment.php" class="btn btn-primary" style="float: right;">Appointment</a>
                         </div>
                     </div>
                 </div>

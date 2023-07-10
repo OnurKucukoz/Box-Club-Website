@@ -1,9 +1,9 @@
 <?php
 
-$db_server = "localhost";
-$db_user = "root";
-$db_pass = "";
-$db_name = "businessdb";
+$db_server = "localhost"; //localhost
+$db_user = "id21016454_onurkucukoz"; //root
+$db_pass = "Uk_145300";
+$db_name = "id21016454_boxwebsitedb"; //businessdb
 $conn = "";
 
 

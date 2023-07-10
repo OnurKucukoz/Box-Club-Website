@@ -4,8 +4,35 @@ include_once("database.php");
 $username = "";
 $email    = "";
 $errors = array();
-$db = mysqli_connect('localhost', 'root', '', 'businessdb');
+$db = mysqli_connect('localhost', 'id21016454_onurkucukoz', 'Uk_145300', 'id21016454_boxwebsitedb');
 
+?>
+<?php
+global $conn;
+
+if (isset($_POST['login_user'])) {
+    $email = mysqli_real_escape_string($db, $_POST['email']);
+    $password = mysqli_real_escape_string($db, $_POST['password']);
+
+
+
+    $hashedd = password_hash($password, PASSWORD_DEFAULT);
+    $query = "SELECT * FROM users WHERE email='$email' ";
+    $results = mysqli_query($db, $query);
+    if (mysqli_num_rows($results) == 1) {
+        $row = mysqli_fetch_assoc($results);
+        if (password_verify($password, $row['password'])) {
+            $_SESSION['name'] = $row['name'];
+            $_SESSION['email'] = $email;
+            $_SESSION['success'] = $password;
+            header("Location: home.php");
+        } else {
+            echo "Wrong username/password combination";
+        }
+    }
+}
+
+mysqli_close($conn);
 ?>
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
@@ -61,34 +88,3 @@ $db = mysqli_connect('localhost', 'root', '', 'businessdb');
 </body>
 
 </html>
-
-
-<?php
-global $conn;
-
-if (isset($_POST['login_user'])) {
-    $email = mysqli_real_escape_string($db, $_POST['email']);
-    $password = mysqli_real_escape_string($db, $_POST['password']);
-
-
-
-    $hashedd = password_hash($password, PASSWORD_DEFAULT);
-    $query = "SELECT * FROM users WHERE email='$email' ";
-    $results = mysqli_query($db, $query);
-    if (mysqli_num_rows($results) == 1) {
-        $row = mysqli_fetch_assoc($results);
-        if (password_verify($password, $row['password'])) {
-            $_SESSION['name'] = $row['name'];
-            $_SESSION['email'] = $email;
-            $_SESSION['success'] = $password;
-            header("Location: home.php");
-        } else {
-            echo "Wrong username/password combination";
-        }
-    }
-}
-//1. Compare the string 'password' with the password from the database (no match)
-
-
-mysqli_close($conn);
-?>

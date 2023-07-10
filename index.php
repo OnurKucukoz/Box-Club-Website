@@ -1,6 +1,7 @@
 <?php
 session_start();
 include_once("database.php");
+echo "hello";
 ?>
 
 <!DOCTYPE html>
@@ -245,6 +246,8 @@ include_once("database.php");
                         <h5 class="card-title" style="color: white;">Rex Hunter</h5>
                         <p class="card-text">Trainer</p>
                         <a href="https://www.instagram.com/kucukozonur/" target="_blank" class="btn btn-primary">Instagram</a>
+                        <a href="Sign.php" class="btn btn-primary" style="float: right;">Appointment</a>
+
                     </div>
                 </div>
 
@@ -254,6 +257,7 @@ include_once("database.php");
                         <h5 class="card-title" style="color: white;">Wade Alvarez</h5>
                         <p class="card-text">Trainer</p>
                         <a href="https://www.instagram.com/kucukozonur/" target="_blank" class="btn btn-primary">Instagram</a>
+                        <a href="Sign.php" class="btn btn-primary" style="float: right;">Appointment</a>
                     </div>
                 </div>
 
@@ -263,6 +267,7 @@ include_once("database.php");
                         <h5 class="card-title" style="color: white;">Leroy Lowe</h5>
                         <p class="card-text">Trainer</p>
                         <a href="https://www.instagram.com/kucukozonur/" target="_blank" class="btn btn-primary">Instagram</a>
+                        <a href="Sign.php" class="btn btn-primary" style="float: right;">Appointment</a>
                     </div>
                 </div>
 
@@ -272,6 +277,7 @@ include_once("database.php");
                         <h5 class="card-title" style="color: white;">Alice Mullins</h5>
                         <p class="card-text">Trainer</p>
                         <a href="https://www.instagram.com/kucukozonur/" target="_blank" class="btn btn-primary">Instagram</a>
+                        <a href="Sign.php" class="btn btn-primary" style="float: right;">Appointment</a>
                     </div>
                 </div>
             </div>
@@ -282,7 +288,6 @@ include_once("database.php");
     <section id="reviews">
         <p class="cool-title" style="color: white;">Reviews</p>
     </section>
-
 
 
     <section id="footer">
@@ -305,17 +310,10 @@ include_once("database.php");
         </div>
     </section>
 
-
-
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 
 </html>
-
-
-
-
 <?php
 mysqli_close($conn);
 ?>
