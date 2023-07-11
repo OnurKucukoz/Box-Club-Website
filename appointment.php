@@ -9,6 +9,7 @@
 
 <body>
     <h1>Appointment</h1>
+    <H2>Appointment management system will be ready soon</H2>
 </body>
 
 </html>

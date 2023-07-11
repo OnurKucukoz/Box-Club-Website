@@ -11,7 +11,7 @@ include_once("database.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Box Club</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=<?php echo time(); ?>">
 </head>
 
 <body>
@@ -176,55 +176,45 @@ include_once("database.php");
 
         <div class="container-fluid">
             <div class="row">
+                <div style="padding-top: 3cm; " class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 d-flex justify-content-center">
+                    <iframe width="420" height="315" src="http://www.youtube.com/embed/pBbBqSExlEU?autoplay=1">
+                    </iframe>
+                </div>
+                <div style="padding-top: 3cm; " class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 d-flex justify-content-center">
+                    <iframe width="420" height="315" src="http://www.youtube.com/embed/pBbBqSExlEU?autoplay=1">
+                    </iframe>
+                </div>
 
-                <div style="padding-top: 3cm; " class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 d-flex justify-content-center"><video width="350" controls>
-                        <source src="videos/Ippo.mp4" type="video/mp4">
-                        <source src="videos/Ippo.mp4" type="video/ogg">
-
-                    </video> </div>
-                <div style="padding-top: 3cm; " class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 d-flex justify-content-center"><video width="350" controls>
-                        <source src="videos//Ippo.mp4" type="video/mp4">
-                        <source src="videos//Ippo.mp4" type="video/ogg">
-
-                    </video> </div>
-
-                <div style="padding-top: 3cm; " class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 d-flex justify-content-center"><video width="350" controls>
-                        <source src="videos//Ippo.mp4" type="video/mp4">
-                        <source src="videos//Ippo.mp4" type="video/ogg">
-
-                    </video> </div>
-
-                <div style="padding-top: 3cm; " class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 d-flex justify-content-center"><video width="350" controls>
-                        <source src="videos//Ippo.mp4" type="video/mp4">
-                        <source src="videos//Ippo.mp4" type="video/ogg">
-
-                    </video> </div>
-
-                <div style="padding-top: 3cm;" class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 d-flex justify-content-center"><video width="350" controls>
-                        <source src="videos//Ippo.mp4" type="video/mp4">
-                        <source src="videos//Ippo.mp4" type="video/ogg">
-
-                    </video> </div>
-
-                <div style="padding-top: 3cm; " class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 d-flex justify-content-center"><video width="350" controls>
-                        <source src="videos//Ippo.mp4" type="video/mp4">
-                        <source src="videos//Ippo.mp4" type="video/ogg">
-
-                    </video> </div>
-
-                <div style="padding-top: 3cm; " class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 d-flex justify-content-center"><video width="350" controls>
-                        <source src="videos//Ippo.mp4" type="video/mp4">
-                        <source src="videos//Ippo.mp4" type="video/ogg">
-
-                    </video> </div>
-
-                <div style="padding-top: 3cm; " class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 d-flex justify-content-center"><video width="350" controls>
-                        <source src="videos//Ippo.mp4" type="video/mp4">
-                        <source src="videos//Ippo.mp4" type="video/ogg">
-
-                    </video> </div>
+                <div style="padding-top: 3cm; " class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 d-flex justify-content-center">
+                    <iframe width="420" height="315" src="http://www.youtube.com/embed/pBbBqSExlEU?autoplay=1">
+                    </iframe>
+                </div>
 
 
+                <div style="padding-top: 3cm; " class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 d-flex justify-content-center">
+                    <iframe width="420" height="315" src="http://www.youtube.com/embed/pBbBqSExlEU?autoplay=1">
+                    </iframe>
+                </div>
+
+                <div style="padding-top: 3cm; " class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 d-flex justify-content-center">
+                    <iframe width="420" height="315" src="http://www.youtube.com/embed/pBbBqSExlEU?autoplay=1">
+                    </iframe>
+                </div>
+
+                <div style="padding-top: 3cm; " class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 d-flex justify-content-center">
+                    <iframe width="420" height="315" src="http://www.youtube.com/embed/pBbBqSExlEU?autoplay=1">
+                    </iframe>
+                </div>
+
+                <div style="padding-top: 3cm; " class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 d-flex justify-content-center">
+                    <iframe width="420" height="315" src="http://www.youtube.com/embed/pBbBqSExlEU?autoplay=1">
+                    </iframe>
+                </div>
+
+                <div style="padding-top: 3cm; " class="col-xxl-3 col-xl-4 col-lg-6 col-md-6 d-flex justify-content-center">
+                    <iframe width="420" height="315" src="http://www.youtube.com/embed/pBbBqSExlEU?autoplay=1">
+                    </iframe>
+                </div>
 
             </div>
         </div>

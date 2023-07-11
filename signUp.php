@@ -25,7 +25,7 @@ include_once("database.php");
 <body class="text-center" style="background-color: #121212">
     <form class="form-signin" action="<?php htmlspecialchars($_SERVER["PHP_SELF"]) ?>" method="post">
         <!-- <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">-->
-        <a class="navbar-brand" href="#">FIGHT<span style="color: red;">CLUB</span></a>
+        <a class="navbar-brand" href="index.php">FIGHT<span style="color: red;">CLUB</span></a>
         <h1 class="h3 mb-3 font-weight-normal">Please sign up</h1>
         <label for="inputName" class="sr-only"></label>
         <input type="name" name="username" id="inputName" class="form-control" placeholder="Name" required="" autofocus="">
@@ -72,10 +72,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     try {
         mysqli_query($conn, $sql);
-        echo "you are connected";
+        function_alert("Successfully registered!");
     } catch (Exception $e) {
         echo $e->getMessage();
     }
 }
 mysqli_close($conn);
+
+function function_alert($message)
+{
+    echo "<script>alert('$message');</script>";
+}
 ?>

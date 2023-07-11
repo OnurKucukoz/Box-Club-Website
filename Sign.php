@@ -20,12 +20,19 @@ if (isset($_POST['login_user'])) {
             $_SESSION['success'] = $password;
             header("Location:home.php");
         } else {
-            echo "Wrong username/password combination";
+            function_alert("Wrong username/password combination!");
         }
+    } else {
+        function_alert("There is no such user!");
     }
 }
 
 mysqli_close($db);
+
+function function_alert($message)
+{
+    echo "<script>alert('$message');</script>";
+}
 ?>
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
@@ -51,7 +58,7 @@ mysqli_close($db);
 <body class="text-center" style="background-color: #121212;">
     <form class="form-signin" action="Sign.php" method="post">
         <!-- <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">-->
-        <a class="navbar-brand" href="#">FIGHT<span style="color: red;">CLUB</span></a>
+        <a class="navbar-brand" href="index.php">FIGHT<span style="color: red;">CLUB</span></a>
 
         <h1 class="h3 mb-3 font-weight-normal">Please login</h1>
         <label for="inputEmail" class="sr-only"></label>
