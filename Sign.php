@@ -4,17 +4,10 @@ include_once("database.php");
 $username = "";
 $email    = "";
 $errors = array();
-$db = mysqli_connect('localhost', 'id21016454_onurkucukoz', 'Uk_145300', 'id21016454_boxwebsitedb');
-
-?>
-<?php
-global $conn;
-
+$db = getConn();
 if (isset($_POST['login_user'])) {
     $email = mysqli_real_escape_string($db, $_POST['email']);
     $password = mysqli_real_escape_string($db, $_POST['password']);
-
-
 
     $hashedd = password_hash($password, PASSWORD_DEFAULT);
     $query = "SELECT * FROM users WHERE email='$email' ";
@@ -25,14 +18,14 @@ if (isset($_POST['login_user'])) {
             $_SESSION['name'] = $row['name'];
             $_SESSION['email'] = $email;
             $_SESSION['success'] = $password;
-            header("Location: home.php");
+            header("Location:home.php");
         } else {
             echo "Wrong username/password combination";
         }
     }
 }
 
-mysqli_close($conn);
+mysqli_close($db);
 ?>
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">

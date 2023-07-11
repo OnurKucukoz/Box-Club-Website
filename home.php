@@ -3,7 +3,7 @@
 session_start();
 include_once("database.php");
 if (isset($_SESSION['email']) && isset($_SESSION['success']))
-echo "hello"; {
+{
 
 ?>
 
