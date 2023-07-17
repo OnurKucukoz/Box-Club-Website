@@ -15,11 +15,18 @@ if (isset($_SESSION['email']) && isset($_SESSION['success'])) {
         <title>Box Club</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
         <link rel="stylesheet" href="styles.css?v=<?php echo time(); ?>">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
     </head>
 
     <body>
 
-        <nav class="navbar navbar-expand-lg bg-body-tertiary" style="height: 61px;">
+        <nav class=" navbar navbar-light navbar-expand-lg bg-body-tertiary" style="height: 90px;">
             <div class="container">
                 <a class="navbar-brand" href="#">FIGHT<span style="color: red;">CLUB</span></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,7 +54,7 @@ if (isset($_SESSION['email']) && isset($_SESSION['success'])) {
 
                     </ul>
 
-                    <h1>Welcome,<?php echo $_SESSION['name']; ?></h1>
+                    <h1>Welcome, <?php echo $_SESSION['name']; ?></h1>
 
                     <a href="logout.php" <button style="margin-right: 1cm; margin-left: 1cm;" class="btn btn-outline-success" type="submit"> Logout</button></a>
 
@@ -58,12 +65,12 @@ if (isset($_SESSION['email']) && isset($_SESSION['success'])) {
 
 
         <section id="title">
-            <div style="background-color: rgb(56, 19, 19); " class="container-fluid">
-                <div class="row">
-                    <div class="col-xl-9 col-lg-12 col-sm-12"><img src="images/boxing.png" alt="boxing"> </div>
+            <div style="background-color: rgb(56, 19, 19); ">
+                <div class="row" style="margin-right: 0px;">
+                    <div class="col-xl-9 col-lg-12 col-sm-12"><img id="boxingGuysImage" class="boxing-title-guys-animation" src="images/pngegg.png" alt="boxing"> </div>
 
-                    <div class="col-xl-3 col-lg-12 col-sm-12"><span class="cool-title" style="color: rgb(255, 255, 255);">Fight like <span style="color: red;">champion</span></span>
-                        <div style="padding-top:1cm ; color: white; font-size: large;">We'll teach you to fight like a CHAMPION! Thanks to our experienced instructors, you will soon improve in your chosen fighting style.</div>
+                    <div class="col-xl-3 col-lg-12 col-sm-12 title-animation"><span class="cool-title " style="color: rgb(255, 255, 255);"><span class="title-animation">Fight like</span><span class="title-animation" style="color: red;"> champion</span></span>
+                        <div style="padding-top:1cm ; padding-right: 10px; padding-left: 10px; color: white; font-size: large; padding-bottom: 1cm; "><span class="title-animation">We'll teach you to fight like a CHAMPION! Thanks to our experienced instructors, you will soon improve in your chosen fighting style.</span></div>
                     </div>
                 </div>
 
@@ -72,10 +79,10 @@ if (isset($_SESSION['email']) && isset($_SESSION['success'])) {
         </section>
 
         <section id="photos">
-            <p class="cool-title" style="color: white; padding-bottom: 0cm; padding-top: 1cm;">Our <span style="color: red;">training</span> </p>
-            <div style="padding-top: 1.8cm;" class="container">
+            <p class="cool-title title-animation" style="color: white; padding-bottom: 0cm; padding-top: 0px;">Our <span style="color: red;">training</span> </p>
+            <div class="container">
                 <div id="carouselExampleFade" class="carousel slide carousel-fade">
-                    <div class="carousel-inner">
+                    <div style="margin-top: 4cm;" class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="images/boxmatch1080.jpg" class="d-block w-100" alt="boxmatch">
                         </div>

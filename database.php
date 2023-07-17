@@ -6,6 +6,7 @@ $db_server = $env['DB_HOST']; //localhost
 $db_user =  $env['DB_USER']; //root
 $db_pass = $env['DB_PASS'];
 $db_name = $env['DB_NAME']; //businessdb
+$db_port = $env['DB_PORT'];
 $conn = null;
 
 try {
@@ -13,7 +14,8 @@ try {
         $db_server,
         $db_user,
         $db_pass,
-        $db_name
+        $db_name,
+        $db_port
     );
 } catch (mysqli_sql_exception $e) {
     echo "Could not connect";
